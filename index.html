@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>46-maktab</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #243247;
+    }
+
+    header {
+      background: #123b70;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    header h1 {
+      font-size: 27px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    .hero {
+      min-height: 400px;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #1766a8, #172b60);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h2 {
+      font-size: clamp(32px, 6vw, 52px);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 650px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: #ffd166;
+      color: #123b70;
+      padding: 13px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 55px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 30px;
+      color: #123b70;
+      margin-bottom: 25px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 27px 20px;
+      border-radius: 14px;
+      box-shadow: 0 5px 18px #102b4b12;
+    }
+
+    .card .emoji {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #1766a8;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+
+    #aloqa {
+      background: #e7eff9;
+    }
+
+    footer {
+      background: #123b70;
+      color: white;
+      text-align: center;
+      padding: 23px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 6px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 40px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏫 46-maktab</h1>
+    <nav>
+      <a href="#bosh">Bosh sahifa</a>
+      <a href="#haqida">Maktab haqida</a>
+      <a href="#fanlar">Fanlar</a>
+      <a href="#aloqa">Aloqa</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="bosh">
+      <h2>46-maktabga xush kelibsiz!</h2>
+      <p>
+        Bilim — kelajak poydevori.
+        Bizning maqsadimiz — bilimli, odobli
+        va barkamol avlodni tarbiyalash.
+      </p>
+      <a class="btn" href="#haqida">Maktab haqida</a>
+    </div>
+
+    <section id="haqida">
+      <h2>Maktabimiz haqida</h2>
+      <p>
+        46-maktab — o'quvchilar bilim olishi,
+        o'z qobiliyatlarini rivojlantirishi va
+        kelajakka ishonch bilan qadam qo'yishi
+        uchun ta'lim maskani.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="emoji">📚</div>
+          <h3>Sifatli ta'lim</h3>
+          <p>Chuqur bilim va mustahkam ko'nikmalar.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">👩‍🏫</div>
+          <h3>Malakali ustozlar</h3>
+          <p>O'quvchilarga bilim va tarbiya berish.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🏆</div>
+          <h3>Yuksak maqsadlar</h3>
+          <p>Iqtidor va iste'dodlarni rivojlantirish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fanlar">
+      <h2>Asosiy fanlar</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="emoji">➗</div>
+          <h3>Matematika</h3>
+          <p>Mantiqiy fikrlash va hisoblash.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">💻</div>
+          <h3>Informatika</h3>
+          <p>Zamonaviy texnologiyalar olami.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🌍</div>
+          <h3>Ingliz tili</h3>
+          <p>Xalqaro muloqot va yangi imkoniyatlar.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">📖</div>
+          <h3>Ona tili</h3>
+          <p>Tilimiz va adabiyotimizni o'rganish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="aloqa">
+      <h2>Biz bilan aloqa</h2>
+      <p>🏫 Muassasa: 46-maktab</p>
+      <p>📍 Manzil: maktab manzilini shu yerga kiriting</p>
+      <p>📞 Telefon: telefon raqamini shu yerga kiriting</p>
+      <a class="btn" href="#bosh">Bosh sahifaga qaytish</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 — 46-maktab</p>
+    <p>Bilim va tarbiya — kelajak kaliti!</p>
+  </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>46-maktab</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #243247;
+    }
+
+    header {
+      background: #123b70;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    header h1 {
+      font-size: 27px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    .hero {
+      min-height: 400px;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #1766a8, #172b60);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h2 {
+      font-size: clamp(32px, 6vw, 52px);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 650px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: #ffd166;
+      color: #123b70;
+      padding: 13px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 55px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 30px;
+      color: #123b70;
+      margin-bottom: 25px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 27px 20px;
+      border-radius: 14px;
+      box-shadow: 0 5px 18px #102b4b12;
+    }
+
+    .card .emoji {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #1766a8;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+
+    #aloqa {
+      background: #e7eff9;
+    }
+
+    footer {
+      background: #123b70;
+      color: white;
+      text-align: center;
+      padding: 23px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 6px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 40px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏫 46-maktab</h1>
+    <nav>
+      <a href="#bosh">Bosh sahifa</a>
+      <a href="#haqida">Maktab haqida</a>
+      <a href="#fanlar">Fanlar</a>
+      <a href="#aloqa">Aloqa</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="bosh">
+      <h2>46-maktabga xush kelibsiz!</h2>
+      <p>
+        Bilim — kelajak poydevori.
+        Bizning maqsadimiz — bilimli, odobli
+        va barkamol avlodni tarbiyalash.
+      </p>
+      <a class="btn" href="#haqida">Maktab haqida</a>
+    </div>
+
+    <section id="haqida">
+      <h2>Maktabimiz haqida</h2>
+      <p>
+        46-maktab — o'quvchilar bilim olishi,
+        o'z qobiliyatlarini rivojlantirishi va
+        kelajakka ishonch bilan qadam qo'yishi
+        uchun ta'lim maskani.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="emoji">📚</div>
+          <h3>Sifatli ta'lim</h3>
+          <p>Chuqur bilim va mustahkam ko'nikmalar.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">👩‍🏫</div>
+          <h3>Malakali ustozlar</h3>
+          <p>O'quvchilarga bilim va tarbiya berish.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🏆</div>
+          <h3>Yuksak maqsadlar</h3>
+          <p>Iqtidor va iste'dodlarni rivojlantirish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fanlar">
+      <h2>Asosiy fanlar</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="emoji">➗</div>
+          <h3>Matematika</h3>
+          <p>Mantiqiy fikrlash va hisoblash.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">💻</div>
+          <h3>Informatika</h3>
+          <p>Zamonaviy texnologiyalar olami.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🌍</div>
+          <h3>Ingliz tili</h3>
+          <p>Xalqaro muloqot va yangi imkoniyatlar.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">📖</div>
+          <h3>Ona tili</h3>
+          <p>Tilimiz va adabiyotimizni o'rganish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="aloqa">
+      <h2>Biz bilan aloqa</h2>
+      <p>🏫 Muassasa: 46-maktab</p>
+      <p>📍 Manzil: maktab manzilini shu yerga kiriting</p>
+      <p>📞 Telefon: telefon raqamini shu yerga kiriting</p>
+      <a class="btn" href="#bosh">Bosh sahifaga qaytish</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 — 46-maktab</p>
+    <p>Bilim va tarbiya — kelajak kaliti!</p>
+  </footer>
+
+</body>
+</html>
